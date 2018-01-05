@@ -9,14 +9,7 @@ class Anagram
   end
 
   def match(anagram)
-    binding.pry
-    anagram.select do |i|
-      if i.chars.sort == word.chars.sort
-        i
-      else
-        []
-      end
-    end
+    anagram.select {|i| i.chars.sort == word.chars.sort}
   end
 
 end
