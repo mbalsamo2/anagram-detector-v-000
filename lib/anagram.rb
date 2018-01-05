@@ -14,7 +14,7 @@ class Anagram
       if i == word
         i
       else
-        {}
+        []
       end  
     end
   end
