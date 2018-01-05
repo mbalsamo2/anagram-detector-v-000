@@ -10,6 +10,13 @@ class Anagram
 
   def match(word)
     binding.pry
+    word.each do |i|
+      if i == word
+        i
+      else
+        {}
+      end  
+    end
   end
 
 end
