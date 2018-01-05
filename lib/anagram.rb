@@ -9,13 +9,13 @@ class Anagram
   end
 
   def match(word)
-    binding.pry
+    # binding.pry
     word.each do |i|
       if i == word
         i
       else
         []
-      end  
+      end
     end
   end
 
