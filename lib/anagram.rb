@@ -10,7 +10,7 @@ class Anagram
 
   def match(word)
     # binding.pry
-    word.find_all do |i|
+    word.find do |i|
       if i.split('').sort.join == word.sort
         i
       else
