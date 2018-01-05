@@ -11,7 +11,7 @@ class Anagram
   def match(anagram)
     # binding.pry
     anagram.select do |i|
-      if i.chars.sort.join == word.sort
+      if i.chars.sort == word.chars.sort
         i
       else
         []
