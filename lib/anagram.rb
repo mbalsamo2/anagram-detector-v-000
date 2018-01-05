@@ -8,10 +8,10 @@ class Anagram
     @word = word
   end
 
-  def match(word)
+  def match(anagram)
     # binding.pry
-    word.find do |i|
-      if i.split('').sort.join == word.sort
+    anagram.select do |i|
+      if i.chars.sort.join == word.sort
         i
       else
         []
