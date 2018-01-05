@@ -9,7 +9,7 @@ class Anagram
   end
 
   def match(anagram)
-    # binding.pry
+    binding.pry
     anagram.select do |i|
       if i.chars.sort == word.chars.sort
         i
